@@ -1,0 +1,18 @@
+.Nama {
+   text-decoration: none;
+   text-shadow: 10px;
+   text-wrap: ;
+   color: green;
+ }
+
+ body {
+   background-image: url(https://ichef.bbci.co.uk/news/464/mcs/media/images/67579000/jpg/_67579274_hellfire.jpg);
+   width: fit-content;
+   height: fit-content;
+   background-size: cover;
+ }
+ 
+ .Tabel {
+   color: lawngreen;
+   text-shadow: 10cap;
+ }

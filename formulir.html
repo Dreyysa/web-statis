@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        Masukkan usia anda <input type="text" name="usia" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <?php
+    if ($_SERVER["REQUST_METHOD"]== "post"){
+        $usia = $_post["usia"];
+
+        if ($usia < 18){
+            echo "Anda Masih BOCIL.";
+        } elseif ($usia >= 18 && $usia <= 30) {
+            echo "Anda adalah seorang dewasa muda.";
+        } else {
+            echo "Anda adalah orang dewasa.";
+        }
+    }
+    ?>
+</body>
+</html>
